@@ -1,0 +1,15 @@
+ion-toolbar {
+  --background: none;
+  background: url(../../assets/images/cabanaPraia.jpg);
+  // background-size: cover;
+  background-position:  center 420px;
+  // background: red !important;
+  color: rgb(30, 128, 0);
+  font-weight: 700;
+
+}
+ion-title {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Dancing Script', cursive;
+}

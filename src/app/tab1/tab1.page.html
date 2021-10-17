@@ -1,17 +1,99 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Visite nossas praias
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- <ion-card>
+    <ion-card-header>
+      <ion-img src="assets/images/praiaBoaViagem.jpg"></ion-img>
+      <ion-card-title>Praias Maravilhosas</ion-card-title>
+    </ion-card-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+    <ion-card-content class="ion-text-justify">
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Segmentos</ion-card-title>
+    </ion-card-header>
+
+    <ion-item href="#" class="ion-activated">
+      <ion-icon name="wifi" slot="start"></ion-icon>
+      <ion-label>Praias</ion-label>
+    </ion-item>
+
+    <ion-item href="#">
+      <ion-icon name="walk" slot="start"></ion-icon>
+      <ion-label>Parques</ion-label>
+    </ion-item>
+
+    <ion-item class="ion-activated">
+      <ion-icon name="warning" slot="start"></ion-icon>
+      <ion-label>Shooping</ion-label>
+    </ion-item>
+
+  </ion-card> -->
+
+  <ion-list *ngFor="let praia of listaPraias" >
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="{{ praia.imagem }}" alt="">
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h2>{{praia.titulo}}</h2>
+          </ion-text>
+          <p>{{ praia.subtitulo }}</p>
+        </ion-label>
+        <!-- <ion-note slot="end">Sul</ion-note> -->
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option (click)="openSite('https://www.google.com/maps/place/Praia+de+Boa+Viagem/@-8.11807,-34.8932392,14z/data=!4m13!1m7!3m6!1s0x7ab1f0bc42e306d:0x2bf385bd7cec6239!2sPraia+de+Boa+Viagem!3b1!8m2!3d-8.11807!4d-34.8932392!3m4!1s0x7ab1f0bc42e306d:0x2bf385bd7cec6239!8m2!3d-8.11807!4d-34.8932392')" color="success">
+          <ion-icon slot="icon-only" name="location-outline"></ion-icon>
+        </ion-item-option>
+        <ion-item-option (click)="like()" color="danger">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <!-- <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://nordestinosnanet.files.wordpress.com/2014/12/praia-boa-viagem.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h2>Praia de Olinda</h2>
+          </ion-text>
+          <p>Recife-PE</p>
+        </ion-label> -->
+        <!-- <ion-note slot="end">Sul</ion-note> -->
+      <!-- </ion-item> -->
+
+      <!-- <ion-item-options side="end">
+        <ion-item-option (click)="openSite('https://www.google.com/maps/place/Praia+de+Boa+Viagem/@-8.11807,-34.8932392,14z/data=!4m13!1m7!3m6!1s0x7ab1f0bc42e306d:0x2bf385bd7cec6239!2sPraia+de+Boa+Viagem!3b1!8m2!3d-8.11807!4d-34.8932392!3m4!1s0x7ab1f0bc42e306d:0x2bf385bd7cec6239!8m2!3d-8.11807!4d-34.8932392')" color="success">
+          <ion-icon slot="icon-only" name="location-outline"></ion-icon>
+        </ion-item-option>
+        <ion-item-option (click)="like()" color="danger">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding> -->
+
+  </ion-list>
+
+
+
+
+
+
