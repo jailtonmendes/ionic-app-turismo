@@ -13,9 +13,9 @@ export class Tab1Page {
   constructor(public toastController: ToastController) {
 
     this.listaPraias = [
-     { id: 1, imagem: '../../assets/images/praiaBoaViagem.jpg', titulo: 'Praia de Boa Viagem', subtitulo: 'Recife-PE' },
-     { id: 2, imagem: '../../assets/images/praiaBoaViagem.jpg', titulo: 'Praia do Pina', subtitulo: 'Recife-PE' },
-     { id: 2, imagem: '../../assets/images/praiaBoaViagem.jpg', titulo: 'Praia de Porto de Galinhas', subtitulo: 'Cabo de Santo Agostinho'},
+     { id: 1, imagem: 'assets/images/praiaBoaViagem.jpg', titulo: 'Praia de Boa Viagem', subtitulo: 'Recife-PE' },
+     { id: 2, imagem: 'assets/images/praiaBoaViagem.jpg', titulo: 'Praia do Pina', subtitulo: 'Recife-PE' },
+     { id: 2, imagem: 'assets/images/praiaBoaViagem.jpg', titulo: 'Praia de Porto de Galinhas', subtitulo: 'Cabo de Santo Agostinho'},
     ];
 
 

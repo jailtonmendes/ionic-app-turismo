@@ -85,3 +85,26 @@ h1{
   color: rgb(255, 255, 255);
   z-index: 10;
 }
+
+
+@media screen and (min-width: 800px) {
+
+  .coracao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .coracao ion-img {
+    width: 30%;
+  }
+
+  .coracao h5 {
+    margin-top: 2%;
+    margin-left: 0;
+  }
+
+  .coracao h2 {
+    margin-top: -8%;
+    margin-left: 0;
+  }
+}

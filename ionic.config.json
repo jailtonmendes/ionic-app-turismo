@@ -1,7 +1,8 @@
 {
   "name": "turismo",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
